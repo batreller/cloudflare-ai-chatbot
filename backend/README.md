@@ -21,10 +21,17 @@ Cloudflare AI chatbot
 
 ### Configuration
 
-Set your JSON Web Token (JWT) secret:
+Generate wrangler types:
+1. Run `npx wrangler types`
+
+Set your JWT secret (for production only):
 
 1. Run `npx wrangler secret put JWT_SECRET`
 2. Enter the secret value when prompted.
+
+Set your JWT secret (for development only):
+
+1. Copy `.dev.vars.example` into `.dev.vars` and set the required variables
 
 ---
 
