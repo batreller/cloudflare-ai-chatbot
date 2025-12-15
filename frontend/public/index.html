@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/11.1.1/marked.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="header">
+    <h1>
+        Chat
+        <button class="clear-btn" id="clearBtn">Clear Chat</button>
+    </h1>
+</div>
+
+<div class="chat-container" id="chatContainer">
+    <div class="empty-state" id="emptyState">Start a conversation...</div>
+</div>
+
+<div class="input-container">
+    <div class="input-controls">
+        <div class="voice-controls">
+            <button class="record-btn" id="recordBtn">Record</button>
+            <button class="stop-btn" id="stopBtn" disabled>Stop</button>
+            <span class="recording-status" id="recordStatus"></span>
+        </div>
+    </div>
+    <div class="text-input-wrapper">
+        <input type="text" class="text-input" id="textInput" placeholder="Type a message...">
+        <button class="send-btn" id="sendBtn">Send</button>
+    </div>
+</div>
+
+<script type="module" src="src/app.js"></script>
+</body>
+</html>
